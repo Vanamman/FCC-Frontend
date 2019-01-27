@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FCC Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Anime Survey Form</h1>
+    <main class="container">
+      <p id="description">Tell us about yourself and your favorite anime.</p>
+      <form action="" id="survey-form">
+        <div class="name text-form">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="John Doe" required/>
+        </div>
+        <div class="email text-form">
+          <label for="email" id="email-label">E-Mail</label>
+          <input type="email" id="email" placeholder="jonhdoe@example.com" required />
+        </div>
+        <div class="age text-form">
+          <label for="age" id="number-label">Age</label>
+          <input type="number" id="number" placeholder="30" required min="1" max="105" />
+        </div>
+
+        <div class="dropdown">
+          <label for="dropdown" id="dropdown-label"
+            >Favorite anime genre.</label
+          >
+          <select name="" id="dropdown">
+            <option>Action</option>
+            <option>Adventure</option>
+            <option>Comedy</option>
+            <option>Drama</option>
+            <option>Slice of Life</option>
+            <option>Fantasy</option>
+            <option>Magic</option>
+            <option>Supernatural</option>
+            <option>Horror</option>
+            <option>Mystery</option>
+            <option>Psychological</option>
+            <option>Romance</option>
+            <option>Sci-Fi</option>
+          </select>
+        </div>
+
+        <div class="radios">
+          <label for="radios"
+            >Which of these three is the best long running shounen?</label
+          >
+            <div class="radio-button">
+                <input type="radio" name="radios" id="radios1" value="Naruto" />
+                <label for="radios1">Naruto</label>
+            </div>
+            <div class="radio-button"> 
+                <input type="radio" name="radios" id="radios2" value="One Piece"/>
+                <label for="radios2">One Piece</label></div>
+            <div class="radio-button">
+                <input type="radio" name="radios" id="radios3" value="Bleach"/>
+                <label for="radios3">Bleach</label></div>
+            </div>
+        </div>
+
+        <div class="checkboxes-form">
+            <label for="checkboxes">Which of these anime have you watched? (Choose all that apply)</label><br>
+            <div class="checkboxes">
+                <input id="first" type="checkbox" name="anime" value="Hunter x Hunter"><label for="first">Hunter x Hunter</label>
+            </div>
+            <div class="checkboxes">
+                <input id="second" type="checkbox" name="anime" value="Haikyu"><label for="second">Haikyu</label>
+            </div>
+            <div class="checkboxes">
+                <input id="third" type="checkbox" name="anime" value="Toradora"><label for="third">Toradora</label>
+            </div>
+            <div class="checkboxes">
+                <input id="fourth" type="checkbox" name="anime" value="Death Note"><label for="fourth">Death Note</label>
+            </div>
+            <div class="checkboxes">
+                <input id="fifth" type="checkbox" name="anime" value="Angel Beats"><label for="fifth">Angel Beats</label>
+            </div>
+            <div class="checkboxes">
+                <input id="sixth" type="checkbox" name="anime" value="Future Diary"><label for="sixth">Future Diary</label>
+            </div>
+            <div class="checkboxes">
+                <input id="seventh" type="checkbox" name="anime" value="Psycho-Pass"><label for="seventh">Psycho-Pass</label>
+            </div>
+            <div class="checkboxes">
+                <input id="eighth" type="checkbox" name="anime" value="Erased"><label for="eighth">Erased</label>
+            </div>
+            <div class="checkboxes">
+                <input id="ninth" type="checkbox" name="anime" value="Code Geass"><label for="ninth">Code Geass</label>
+            </div>
+        </div>
+
+        <div class="comments">
+            <label for="comments">What is your all time favorite anime?</label>
+            <textarea name="comments" id="fav-anime" cols="30" rows="2" placeholder="Enter answer here..."></textarea>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

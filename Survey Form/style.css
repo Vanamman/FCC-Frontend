@@ -1,0 +1,89 @@
+body {
+  background-image: url(images/naruto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title {
+  text-align: center;
+  color: white;
+}
+.container {
+  background-color: rgba(209, 209, 209, 0.938);
+  width: 50vw;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+#description {
+  font-size: 25px;
+  padding-top: 30px;
+  text-align: center;
+}
+.text-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+}
+#number,
+#email,
+#name {
+  line-height: 2em;
+  margin-top: 10px;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+}
+#dropdown {
+  height: 2em;
+  min-width: 20em auto;
+  margin-top: 10px;
+}
+.radios {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+}
+.radio-button {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+}
+.radio-button input {
+  align-self: flex-start;
+}
+.checkboxes-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+}
+.checkboxes-form input {
+  margin-top: 15px;
+}
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 18px;
+}
+#fav-anime {
+  margin-top: 10px;
+  max-width: 100%;
+}
+#submit {
+  background-color: #283593;
+  border-radius: 2px;
+  height: 36px;
+  color: white;
+  padding: 6px 16px;
+  margin-bottom: 30px;
+}
