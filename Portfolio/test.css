@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #1f1f1f;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+  color: violet;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content(max-content);
+  grid-gap: 10px;
+  margin-left: 10px;
+}
+#navbar {
+  overflow: hidden;
+  position: fixed;
+  background: black;
+  width: 100%;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+#navbar a:hover {
+  color: purple;
+}
+.options {
+  padding-left: 200px;
+}
+.about {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+  margin-top: 80px;
+  width: auto;
+}
+.social {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-gap: 40px;
+  justify-self: center;
+  align-self: center;
+}
+i {
+  padding-top: 30px;
+  transition: all ease-in-out 200ms;
+  color: rgb(112, 112, 112);
+}
+.icon {
+  grid-row: 1;
+}
+#twitter:hover {
+  color: #1da1f2;
+  margin-top: -10px;
+}
+#github:hover {
+  color: white;
+  margin-top: -10px;
+}
+#linkedin:hover {
+  color: #0077b5;
+  margin-top: -10px;
+}
+#fcc:hover {
+  color: #7b6b48;
+  margin-top: -10px;
+}
+img {
+  height: 300px;
+  width: 450px;
+}
+.portfolio {
+  padding-top: 100px;
+  grid-row: auto;
+  grid-column: auto;
+}
+.explanation {
+  grid-column: 1 / -1;
+  grid-row: auto;
+  padding-top: 100px;
+  bottom: 0px;
+  width: auto;
+  justify-self: center;
+}
+a:hover {
+  color: rgb(117, 0, 117);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about {
+    width: 800px;
+  }
+
+  .explanation {
+    width: 600px;
+  }
+}
