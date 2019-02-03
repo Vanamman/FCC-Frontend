@@ -109,6 +109,26 @@ ol {
   transition: background-color 1s;
 }
 
+/* FOOTER */
+#footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+}
+#footer ul {
+  list-style: none;
+  grid-column: 2;
+  justify-self: start;
+  display: flex;
+}
+#footer ul li {
+  margin-right: 20px;
+}
+#footer span {
+  justify-self: end;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 750px) {
   #header {
